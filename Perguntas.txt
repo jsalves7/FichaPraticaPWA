@@ -6,6 +6,14 @@ Pop: Recupera as alterações guardadas temporariamente no stash e volta a aplic
 
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
 
+Usar branches num repositório Git permite desenvolver novas funcionalidades e corrigir erros sem afetar diretamente o código principal do projeto.
+
+As principais vantagens são:
+
+Isolamento: Permite desenvolver funcionalidades ou corrigir erros sem alterar diretamente o código principal do projeto.
+Trabalho em Paralelo: Facilita o trabalho paralelo no projeto, permitindo que cada pessoa desenvolva as suas alterações de forma independente.
+Organização e Revisão: Permite separar as alterações por funcionalidades ou tarefas, facilitando a revisão do código antes de integrar as alterações no código principal do projeto.
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 
