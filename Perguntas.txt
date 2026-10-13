@@ -29,3 +29,7 @@ Limpar: Executar o comando "git stash drop", pois quando há conflitos, o Git n�
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+
+Fork: Permite criar uma cópia de um repositório na nossa própria conta, seja no GitHub ou noutra plataforma que suporte esta funcionalidade.
+Clone: Permite copiar um repositório para o nosso computador, para podermos aceder aos ficheiros, fazer alterações e trabalhar no projeto localmente.
+
