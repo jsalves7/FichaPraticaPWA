@@ -17,5 +17,15 @@ Organização e Revisão: Permite separar as alterações por funcionalidades ou
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 
+Um conflito de "Pop", ocorre quando o código recuperado e o código atual mexem exatamente nas mesmas linhas e no mesmo ficheiro. O Git bloqueia o processo porque não tem capacidade de adivinhar qual é a versão correta.
+
+Para resolver, tipicamente seguimos estes passos:
+
+Editar: Procurar nos ficheiros afetados as marcações de conflito inseridas pelo Git (<<<<<<<, =======, >>>>>>>) e ajustar o código para a versão correta, apagando esses símbolos no final.
+
+Confirmar: Executar o comando "git add <ficheiro>", para indicar ao Git que o conflito daquele ficheiro está resolvido.
+
+Limpar: Executar o comando "git stash drop", pois quando há conflitos, o Git não apaga o stash automaticamente por precaução.
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
