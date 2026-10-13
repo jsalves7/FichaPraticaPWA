@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Perguntas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        line-height: 1.5;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<h2>1 - O que são operações de <em>"Commit"</em>, <em>"Push"</em> e <em>"Pop"</em> efetuadas num repositório?</h2>
+
+<ul>
+    <li><strong>Commit</strong>: Regista as alterações no repositório local, criando um ponto de referência no histórico do projeto que permite acompanhar o que foi alterado.</li>
+    <li><strong>Push</strong>: Envia os commits do repositório local para o repositório remoto, permitindo partilhar as alterações com a equipa e sincronizar o trabalho.</li>
+    <li><strong>Pop</strong>: Recupera as alterações guardadas temporariamente no stash e volta a aplicá-las no diretório de trabalho. Ao contrário do <em>apply</em>, o pop remove as alterações do stash após as aplicar.</li>
+</ul>
+
+<h2>2 – Quais são as vantagens de usar <em>Branches</em> num repositório git?</h2>
+
+<p>Usar branches num repositório Git permite desenvolver novas funcionalidades e corrigir erros sem afetar diretamente o código principal do projeto.</p>
+
+<p>As principais vantagens são:</p>
+
+<ol>
+    <li><strong>Isolamento</strong>: Permite desenvolver funcionalidades ou corrigir erros sem alterar diretamente o código principal do projeto.</li>
+    <li><strong>Trabalho em Paralelo</strong>: Facilita o trabalho paralelo no projeto, permitindo que cada pessoa desenvolva as suas alterações de forma independente.</li>
+    <li><strong>Organização e Revisão</strong>: Permite separar as alterações por funcionalidades ou tarefas, facilitando a revisão do código antes de integrar as alterações no código principal do projeto.</li>
+</ol>
+
+<h2>3 – Nos Merges de conteúdos resultantes de um <em>"Pop"</em> podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?</h2>
+
+<p>Um conflito de <em>"Pop"</em>, ocorre quando o código recuperado e o código atual mexem exatamente nas mesmas linhas e no mesmo ficheiro. O Git bloqueia o processo porque não tem capacidade de adivinhar qual é a versão correta.</p>
+
+<p>Para resolver, tipicamente seguimos estes passos:</p>
+
+<ol>
+    <li><strong>Editar</strong>: Procurar nos ficheiros afetados as marcações de conflito inseridas pelo Git (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>) e ajustar o código para a versão correta, apagando esses símbolos no final.</li>
+    <li><strong>Confirmar</strong>: Executar o comando <strong>git add &lt;ficheiro&gt;</strong>, para indicar ao Git que o conflito daquele ficheiro está resolvido.</li>
+    <li><strong>Limpar</strong>: Executar o comando <strong>git stash drop</strong>, pois quando há conflitos, o Git não apaga o stash automaticamente por precaução.</li>
+</ol>
+
+<h2>4 – <em>"Clone"</em> e <em>"Fork"</em> são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?</h2>
+
+<ul>
+    <li><strong>Fork</strong>: Permite criar uma cópia de um repositório na nossa própria conta, seja no GitHub ou noutra plataforma que suporte esta funcionalidade.</li>
+    <li><strong>Clone</strong>: Permite copiar um repositório para o nosso computador, para podermos aceder aos ficheiros, fazer alterações e trabalhar no projeto localmente.</li>
+</ul>
+
+</body>
+</html>
